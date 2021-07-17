@@ -7,7 +7,7 @@ function TodoForm(props) {
         e.preventDefault();     // remove automate refresh when clicking add button
 
         props.clickedAddTodo({
-            data: new Date(),
+            date: new Date(),
             text: input
         })
 
