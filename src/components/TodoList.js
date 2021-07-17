@@ -41,7 +41,7 @@ function TodoList() {
 
             var todosString = ""
             todos.map((todo, index)=>{
-                (index === 0) ? todosString = JSON.stringify(todo) : todosString += "<seg>" + JSON.stringify(todo)
+                return (index === 0) ? todosString = JSON.stringify(todo) : todosString += "<seg>" + JSON.stringify(todo)
             })
             localStorage.setItem("todos", todosString)
         }
